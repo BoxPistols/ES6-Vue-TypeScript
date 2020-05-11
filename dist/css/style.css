@@ -1,3 +1,11 @@
+.fx {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
 .test {
   color: red;
   display: flex;
