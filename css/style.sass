@@ -1,6 +1,34 @@
 $lh: 1.6
 $color: teal
 
+@mixin fx()
+  display: flex
+
+@mixin fx-center-center()
+  display: flex
+  justify-content: center
+  align-items: center
+
+@mixin fx-non-center()
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+@mixin fx-center-non()
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+@mixin fx-column()
+  +fx
+  flex-direction: column
+
+.test
+  color: red
+  +fx-column
+
 /* CSS Reset Base /
 *
   box-sizing: border-box
@@ -19,10 +47,6 @@ body
   background-image: linear-gradient(120deg, #649ac0 0%, #cfb3f4 100%)
   text-align: center
   height: 100vh
-  display: flex
-  justify-content: center
-  align-items: center
-  flex-direction: column
 
 .bd
   margin: 2rem 0
@@ -49,3 +73,11 @@ h3
   font-size: 2.0rem
 p
   font-size: 1.6rem
+
+.content
+  font-size: 2.4rem
+
+/* Basic */
+
+/*=====  comment  ======*/
+
