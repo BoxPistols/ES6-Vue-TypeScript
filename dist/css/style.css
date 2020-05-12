@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap");
 .fx {
   display: flex;
 }
@@ -21,15 +22,17 @@ html {
 body {
   padding: 2rem;
   font-size: 100%;
-  font-family: sans-serif;
-  color: #222;
-  background-image: linear-gradient(120deg, #649ac0 0%, #cfb3f4 100%);
+  font-family: "Quicksand", sans-serif;
+  background-image: url("https://picsum.photos/1200/800/?image=134");
+  background-repeat: none;
+  background-size: cover;
   text-align: center;
   height: 100vh;
-  color: #234;
+  color: #345;
 }
 
 h1, h2, h3, p, div {
+  font-weight: 500;
   line-height: 1.6;
   text-shadow: 1px 1px 2px white;
 }
@@ -66,13 +69,13 @@ p {
 }
 
 .content {
-  max-width: 80%;
-  margin: 2.4rem auto;
+  max-width: 70%;
+  margin: 10% auto;
   padding: 2.4rem;
   font-size: 2.4rem;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 1.2rem;
-  box-shadow: 0.2rem 0.2rem 1.2rem navy;
+  box-shadow: 0.2rem 0.2rem 1.2rem chocolate;
 }
 
 /* Basic */

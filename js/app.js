@@ -25,11 +25,11 @@ const week = [
   "金",
   "土"
 ]
-//r(week) break
+// break
 r('<p></p>')
 
 // el.insertAdjacentHTML('beforeend', `${getMonth} / ${getDate} (${getDay})`)
-r(`${getMonth}/${getDate}(${week[getDay]}) _ ${getHours}:${getMinutes}`)
+r(`${getMonth}/${getDate}(${week[getDay]}) ${getHours}:${getMinutes}`)
 
 // break
 r('<p></p>')
