@@ -1,0 +1,31 @@
+$lh: 1.6
+$color: teal
+
+@mixin fx()
+  display: flex
+
+.fx
+  +fx
+.wrap
+  flex-wrap: wrap
+
+@mixin fx-center-center()
+  display: flex
+  justify-content: center
+  align-items: center
+
+@mixin fx-non-center()
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+@mixin fx-center-non()
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+@mixin fx-column()
+  +fx
+  flex-direction: column

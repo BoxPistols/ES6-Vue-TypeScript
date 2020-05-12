@@ -1,57 +1,5 @@
-$lh: 1.6
-$color: teal
-
-@mixin fx()
-  display: flex
-
-.fx
-  +fx
-.wrap
-  flex-wrap: wrap
-
-@mixin fx-center-center()
-  display: flex
-  justify-content: center
-  align-items: center
-
-@mixin fx-non-center()
-  display: flex
-  justify-content: center
-  align-items: center
-  flex-direction: column
-
-@mixin fx-center-non()
-  display: flex
-  justify-content: center
-  align-items: center
-  flex-direction: column
-
-@mixin fx-column()
-  +fx
-  flex-direction: column
-
-.test
-  color: red
-  +fx-column
-
-/* CSS Reset Base /
-*
-  box-sizing: border-box
-  margin: 0
-  padding: 0
-  font-weight: normal
-
-html
-  font-size: 62.5%
-
-body
-  padding: 2rem
-  font-size: 100%
-  font-family: sans-serif
-  color: #222
-  background-image: linear-gradient(120deg, #649ac0 0%, #cfb3f4 100%)
-  text-align: center
-  height: 100vh
+@import base/utility
+@import base/base
 
 .bd
   margin: 2rem 0
@@ -65,22 +13,14 @@ body
   color: $color
   text-shadow: 2px 2px 4px white
 
-h1,h2,h3,p,div
-  line-height: $lh
-  text-shadow: 1px 1px 2px white
-
-/* fontSize 1rem = 10px */
-h1
-  font-size: 3.2rem
-h2
-  font-size: 2.4rem
-h3
-  font-size: 2.0rem
-p
-  font-size: 1.6rem
-
 .content
+  max-width: 80%
+  margin: 2.4rem auto
+  padding: 2.4rem
   font-size: 2.4rem
+  background-color: rgba(white, .5)
+  border-radius: 1.2rem
+  box-shadow: .2rem .2rem 1.2rem navy
   // +fx
   // flex-wrap: wrap
 

@@ -6,12 +6,6 @@
   flex-wrap: wrap;
 }
 
-.test {
-  color: red;
-  display: flex;
-  flex-direction: column;
-}
-
 /* CSS Reset Base / */
 * {
   box-sizing: border-box;
@@ -32,20 +26,7 @@ body {
   background-image: linear-gradient(120deg, #649ac0 0%, #cfb3f4 100%);
   text-align: center;
   height: 100vh;
-}
-
-.bd {
-  margin: 2rem 0;
-  width: 50%;
-  border: 0.5px solid teal;
-  box-shadow: 0px 1px 1px white;
-}
-
-.title {
-  font-size: 4.8rem;
-  margin-bottom: 2rem;
-  color: teal;
-  text-shadow: 2px 2px 4px white;
+  color: #234;
 }
 
 h1, h2, h3, p, div {
@@ -70,8 +51,28 @@ p {
   font-size: 1.6rem;
 }
 
+.bd {
+  margin: 2rem 0;
+  width: 50%;
+  border: 0.5px solid teal;
+  box-shadow: 0px 1px 1px white;
+}
+
+.title {
+  font-size: 4.8rem;
+  margin-bottom: 2rem;
+  color: teal;
+  text-shadow: 2px 2px 4px white;
+}
+
 .content {
+  max-width: 80%;
+  margin: 2.4rem auto;
+  padding: 2.4rem;
   font-size: 2.4rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 1.2rem;
+  box-shadow: 0.2rem 0.2rem 1.2rem navy;
 }
 
 /* Basic */
