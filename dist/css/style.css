@@ -69,6 +69,7 @@ p {
 }
 
 .content {
+  min-height: 70vh;
   max-width: 70%;
   margin: 10% auto;
   padding: 2.4rem;
@@ -76,6 +77,11 @@ p {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 1.2rem;
   box-shadow: 0.2rem 0.2rem 1.2rem chocolate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Basic */
