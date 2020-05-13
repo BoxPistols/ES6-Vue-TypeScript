@@ -88,6 +88,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
+//! @prepros-append  components/book_first-frontEnd-dev.js
 //! @prepros-append  components/for-while.js
 //! @prepros-append  components/hash.js
 //! @prepros-append  components/indexOf.js
