@@ -86,8 +86,11 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "personSet", function() { return personSet; });
 //! @prepros-append  components/book_first-frontEnd-dev.js
 //! @prepros-append  components/for-while.js
 //! @prepros-append  components/hash.js
@@ -131,6 +134,18 @@ r('<p></p>'); // el.insertAdjacentHTML('beforeend', `${getMonth} / ${getDate} ($
 r(`${getMonth}/${getDate}(${week[getDay]}) ${getHours}:${getMinutes}`); // break
 
 r('<p></p>');
+class personSet {
+  constructor(id, name) {
+    this.id = id, this.name = name;
+  }
+
+  printPersonData() {
+    r(this.name);
+  }
+
+}
+const psD = new personSet(20, "北斗神拳");
+psD.printPersonData();
 
 /***/ })
 /******/ ]);
